@@ -37,6 +37,8 @@ def validate_data(values):
     so 6 sales data to be recorded.)
     """
     try:
+        # list comprehension, make individual list values into integers
+        [int(value) for value in values]
         # if length of input list is more than 6
         if len(values) != 6:
             # raise error
